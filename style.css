@@ -1,8 +1,14 @@
+@keyframes pisca {
+    0%{opacity: 0.2;}
+    50%{opacity: 1;}
+    100%{opacity: 0.2;}
+}
 body{
     margin: 0%;
     display: flex; /*centralizar itens*/
     justify-content: center;/*tamanho do conteudo*/
     align-items: center;/*centralizar itens*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .urna{
@@ -16,6 +22,10 @@ body{
     width: 500px;
     height: 320px;
     background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border-radius: 4px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -58,4 +68,60 @@ body{
     font-size: 15px;
     width: 90px;
     height: 50px;
+}
+
+
+.d-1{
+    flex: 1;
+    display: flex;
+    padding-left: 15px;
+}
+.d-1-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.d-1-1{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.d-1-2{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-1-3{
+    height: 50px;
+    
+}
+.numero{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    line-height: 40px;
+    font-size: 25px;   
+
+}
+.pisca{
+    animation-name: pisca;
+    animation-duration: 2s;
+    anim
+}
+.d-1-4{
+    flex: 1;
+    line-height: 30px;
+}
+.d-1-right{
+    width: 90px;
+}
+
+.d-2{
+    height: 60px;
+    font-size: 13px;
+    border-top: 2px solid #000;
+    padding-left: 10px;
 }
