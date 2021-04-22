@@ -6,11 +6,13 @@ let lateral = document.querySelector('.d-1-right');
 let numeros = document.querySelector('.d-1-3');
 
 let etapaAtual = 0;
+let numero = '';
 
 function comecarEtapa(){
     let etapa = etapas[etapaAtual];
 
     let numeroHTML = '';
+
 
     for(let i=0;i<etapa.numeros;i++) {
         numeroHTML += '<div class="numero"></div>';
@@ -23,6 +25,9 @@ function comecarEtapa(){
     lateral.innerHTML = '';
     numeros.innerHTML = numeroHTML;
 
+}
+function atualizaInterface(){
+    
 }
 
 function clicou(n) {
@@ -37,3 +42,5 @@ function corrige(){
 function confirma(){
     alert("clicou em CONFIRMA" )
 }
+
+comecarEtapa()
