@@ -15,11 +15,7 @@ function comecarEtapa(){
 
 
     for(let i=0;i<etapa.numeros;i++) {
-        if(i === 0){
-            numeroHTML += '<div class="numero pisca"></div>';
-        }else{
         numeroHTML += '<div class="numero"></div>';
-        }
     }
 
     seuVotoPara.style.display ='none';
@@ -35,11 +31,7 @@ function atualizaInterface(){
 }
 
 function clicou(n) {
-    let elNumero = document.querySelector('.numero.pisca')
-    if(elNumero !== null){
-        elNumero.innerHTML = n
-        numero = `${numero}${n}`
-    }
+    alert("clicou em " +n)
 }
 function branco(){
     alert("clicou em BRANCO " )
